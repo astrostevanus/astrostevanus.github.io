@@ -2130,7 +2130,10 @@ input, select, textarea {
 				}
 
 				@media screen and (max-width: 736px) {
-
+					#main > .panel.intro {
+						flex-direction: column;   /* stack text + image */
+						text-align: center;       /* center text */
+					}
 					#main > .panel.intro .pic {
 						width: 80%;       /* make image scale nicely */
 						max-width: 300px; /* optional: prevent it from being too large */
@@ -2138,7 +2141,9 @@ input, select, textarea {
 					}
 
 					#main > .panel.intro header {
-						padding: 2.75em 2em 2.5em 2em;
+						/* padding: 2.75em 2em 2.5em 2em; */
+						padding-right: 0;
+						margin-bottom: 1em;						
 					}
 
 						#main > .panel.intro header p {
