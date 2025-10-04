@@ -1771,7 +1771,7 @@ input, select, textarea {
 
 	#nav {
 		text-align: center;
-		height: 8.0em;
+		height: 8.5em;
 		cursor: default;
 	}
 
@@ -2010,6 +2010,8 @@ input, select, textarea {
 					flex-shrink: 0;
 					width: 20em;
 					height: 100%;
+					object-fit: cover;
+					object-position: center;
 					
 				}
 
@@ -2028,7 +2030,7 @@ input, select, textarea {
 					#main > .panel.intro .pic img {
 						position: relative;
 						display: block;
-						position: absolute;
+						/* position: absolute; */
 						top: 3em;
 						left: 3em;
 						width: 100%;
@@ -2133,22 +2135,28 @@ input, select, textarea {
 					#main > .panel.intro {
 						flex-direction: column;   /* stack text + image */
 						text-align: center;       /* center text */
+						padding-right: 5em;
 					}
 					#main > .panel.intro .pic {
-						width: 80%;       /* make image scale nicely */
-						max-width: 300px; /* optional: prevent it from being too large */
-						margin: 0 auto;   /* center image */
+						width: 100%;       /* make image scale nicely */
+						height: auto;
+						max-width: 400px; optional: prevent it from being too large
+						margin: auto;   /* center image */
+						position: relative;
+						padding-right: 0.em;
+						/* display: block; */
+						/* position: absolute; */
 					}
 
 					#main > .panel.intro header {
 						/* padding: 2.75em 2em 2.5em 2em; */
 						padding-right: 0;
-						margin-bottom: 1em;						
+						margin-bottom: 2em;						
 					}
 
 						#main > .panel.intro header p {
 							font-size: 1em;
-							margin: 0.25em 0 0 0;
+							margin: 0 0 0 0;
 						}
 
 				}
