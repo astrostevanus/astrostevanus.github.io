@@ -1771,7 +1771,7 @@ input, select, textarea {
 
 	#nav {
 		text-align: center;
-		height: 8.5em;
+		height: 5.0em;
 		cursor: default;
 	}
 
@@ -1869,6 +1869,14 @@ input, select, textarea {
 				display: none;
 			}
 
+		@media (max-width: 736px) {
+			#nav {height: 5.5em;}
+			#nav a:before {font-size: 2.15rem;}
+			#nav a:after {margin-left: -0.5em;}
+			#nav { gap: 0.5rem; padding: 0.1rem 0.4rem; }
+			#nav a {width: 2.8em; height: 3.0em; margin: 0 0.35rem; padding: 0.35rem; }
+			}
+			
 		}
 
 /* Wrapper */
@@ -1926,7 +1934,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#wrapper {
-				padding: 1em 0;
+				padding: 2.5em 0;
 				max-width: calc(100% - 2em);
 			}
 
@@ -1949,6 +1957,7 @@ input, select, textarea {
 		width: 100%;
 		background: #ffffff;
 		opacity: 1;
+		padding: 1.0em;
 		box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
 		-moz-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 		-webkit-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
@@ -1963,7 +1972,7 @@ input, select, textarea {
 			transition: opacity 0.15s ease-in-out;
 			margin-bottom: 0;
 			position: relative;
-			padding: 3.5em 2.5em 2.5em 2.5em;
+			padding: 1.0em 1.0em 1.0em 1.0em;
 			width: 100%;
 		}
 
@@ -1980,8 +1989,8 @@ input, select, textarea {
 			}
 
 			#main > .panel.intro {
-				padding: 0;
-				height: 23em;
+				padding: 0em;
+				height: 23.0em;
 				align-items: stretch;
 				display: -moz-flex;
 				display: -webkit-flex;
@@ -2132,6 +2141,9 @@ input, select, textarea {
 				}
 
 				@media screen and (max-width: 736px) {
+					#main > .panel {padding: 0.0em 0.0em 1.5em 1.0em;
+									width: 100%;
+					}
 					#main > .panel.intro {
 						flex-direction: column;   /* stack text + image */
 						text-align: center;       /* center text */
